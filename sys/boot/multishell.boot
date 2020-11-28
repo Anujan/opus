@@ -87,7 +87,7 @@ if not fs.exists('usr/autorun') then
   fs.makeDir('usr/autorun')
 end
 if not fs.exists('usr/etc/fstab') or not fs.exists('usr/etc/fstab.ignore') then
-  Util.writeFile('usr/etc/fstab', 'usr gitfs Anujan/opus-apps/master')
+  Util.writeFile('usr/etc/fstab', 'usr gitfs Anujan/opus-apps/develop-1.8')
   Util.writeFile('usr/etc/fstab.ignore', 'forced fstab overwrite')
 end
 if not fs.exists('usr/config/shell') then
