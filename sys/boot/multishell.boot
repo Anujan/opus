@@ -1,7 +1,7 @@
 -- Loads the Opus environment regardless if the file system is local or not
 
 local w, h = term.getSize()
-local str = 'Loading Opus...'
+local str = 'Loading Opus2...'
 term.setTextColor(colors.white)
 if term.isColor() then
   term.setBackgroundColor(colors.cyan)
