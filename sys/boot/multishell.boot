@@ -3,28 +3,6 @@
 local w, h = term.getSize()
 local str = 'Loading Opus2...'
 term.setTextColor(colors.white)
-if term.isColor() then
-  term.setBackgroundColor(colors.cyan)
-  term.clear()
-  local opus = {
-    '9999900',
-    '999907000',
-    '9900770b00 4444',
-    '99077777444444444',
-    '907777744444444444',
-    '90000777444444444',
-    '070000111744444',
-    '777770000',
-    '7777000000',
-    '70700000000',
-    '077000000000',
-  }
-  for k,line in ipairs(opus) do
-    term.setCursorPos((w - 18) / 2, k + (h - #opus) / 2)
-    term.blit(string.rep(' ', #line), string.rep('a', #line), line)
-  end
-end
-
 term.setCursorPos((w - #str) / 2, h)
 term.write(str)
 term.setCursorPos(w, h)
